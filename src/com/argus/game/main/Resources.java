@@ -14,7 +14,7 @@ public class Resources {
 	
 	public static void load(){
 		//TODO
-		welcome = loadImage("welcomeB.png"); //load welcome.png
+		welcome = loadImage("welcome.png"); //load welcome.png
 		iconimage = loadImage("iconimage.png");//load iconimage.png
 	}
 	

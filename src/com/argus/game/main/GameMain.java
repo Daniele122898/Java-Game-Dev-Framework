@@ -8,8 +8,8 @@ public class GameMain {
 	 * do NOT belong to any particular instance -> belong to class 
 	 * final means not changeable and uppercase constant*/
 	private static final String GAME_TITLE ="Java Game Dev Framework by Argus"; //Title
-	public static final int GAME_WIDTH = 1600; //Width
-	public static final int GAME_HEIGHT = 900; //height
+	public static final int GAME_WIDTH = 800; //Width
+	public static final int GAME_HEIGHT = 450; //height
 	public static Game sGame;
 	
 	public static void main(String[] args){

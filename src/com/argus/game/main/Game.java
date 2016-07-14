@@ -47,11 +47,11 @@ public class Game extends JPanel implements Runnable{ //becomes type of JPanel, 
 	}
 	
 	@Override
-	public void addNotify(){
+	public void addNotify(){//runs automatically when Frame starts
 		super.addNotify(); //add super class
 		initInput(); //Initiate Inputhandler
 		setCurrentState(new LoadState());
-		initGame();
+		initGame();//starts Gameloop 
 	}
 	
 	private void initGame(){
@@ -62,7 +62,7 @@ public class Game extends JPanel implements Runnable{ //becomes type of JPanel, 
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		//runnable thread
 		System.out.println("Running");
 		
 		while (running){
@@ -105,8 +105,8 @@ public class Game extends JPanel implements Runnable{ //becomes type of JPanel, 
 	
 	private void initInput(){
 		inputHandler = new InputHandler();
-		addKeyListener(inputHandler);
-		addMouseListener(inputHandler);
+		addKeyListener(inputHandler);//Listens to key input and hands it to inputHandler
+		addMouseListener(inputHandler);//listens to mouse input and hands it to inputHandler
 	}
 
 }
